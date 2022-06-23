@@ -54,15 +54,16 @@ gpg --armor --export 3AA5C34371567BD2
 Use the Script
 --------
 
-Setup the config file by copying and editing it:
+Setup the config file by copying and editing it with the user:
 ```
-cd gitstuff
+cd ~/repos/gitstuff
 cp config.example config
 ```
 
-Then:
+Then from the repo you want to configure and add GPG signing to:
 ```
-./gitstuff.sh
+cd ~/repos/repotoconfigure
+~/repos/gitstuff/gitstuff.sh
 ```
 
 See also
