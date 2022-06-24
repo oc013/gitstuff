@@ -21,6 +21,7 @@ Host github.com-secondaryid
     HostName github.com
     User git
     IdentityFile ~/.ssh/secondaryid
+    IdentitiesOnly yes
 ```
 
 Clone repos using the alias
