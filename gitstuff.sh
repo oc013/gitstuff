@@ -9,7 +9,15 @@ fi
 
 source ${DIR}/config
 
-git config user.name ${username}
-git config user.email ${useremail}
-git config user.signingkey ${gpgkeyid}
-git config commit.gpgsign true
+applyglobal=${applyglobal:=0}
+
+if (( $applyglobal > 0 )); then
+    globalflag="--global"
+else
+    globalflag=""
+fi
+
+git config ${globalflag} user.name ${username}
+git config ${globalflag} user.email ${useremail}
+git config ${globalflag} user.signingkey ${gpgkeyid}
+git config ${globalflag} commit.gpgsign true

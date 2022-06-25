@@ -1,5 +1,13 @@
 #!/bin/bash
 
+#username that will be displayed with commits
 username="oc013"
+
+#email that will be displayed with commits
 useremail="101832295+oc013@users.noreply.github.com"
+
+#the gpg key to sign commits with
 gpgkeyid="3AA5C34371567BD2"
+
+#set to 1 to apply globally
+applyglobal=0
